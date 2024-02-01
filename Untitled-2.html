@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin: 20px auto;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .about,
+        .contact {
+            padding: 10px 0;
+        }
+        .contact {
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image" style="background-image: url('путь_к_вашему_изображению.jpg');"></div>
+        <div class="header">
+            <h1>Имя Фамилия</h1>
+            <p>Должность / Профессия</p>
+        </div>
+        <div class="about">
+            <h2>Обо мне</h2>
+            <p>Здесь вы можете рассказать о себе, вашем опыте и достижениях.</p>
+        </div>
+        <div class="contact">
+            <h2>Контакты</h2>
+            <p>Телефон: +7 123 456 7890</p>
+            <p>Email: example@email.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            <button onclick="showAlert()">Связаться со мной</button>
+        </div>
+    </div>
+    <script>
+        function showAlert() {
+            alert('Спасибо за интерес! Я свяжусь с вами в ближайшее время.');
+        }
+    </script>
+</body>
+</html>
